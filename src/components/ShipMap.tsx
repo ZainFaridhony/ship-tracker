@@ -23,7 +23,7 @@ const ShipMap: React.FC<ShipMapProps> = ({ ships }) => {
     }
     const { latitude, longitude } = ships[0];
     return { lat: latitude, lng: longitude };
-  }, [ships]);
+  }, []);
 
   return (
     <MapContainer center={center} zoom={3} className="h-full min-h-[400px] w-full rounded-xl">
